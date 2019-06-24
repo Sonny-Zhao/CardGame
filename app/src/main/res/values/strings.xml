@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CardsGame</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about">告诉你个小秘密</string>
+    <string name="about">12张牌中有6对是一样的，根据你的记忆力找出它们吧! QQ:441256563欢迎交流</string>
+</resources>

@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1">
+    <!-- 添加一个相对布局管理器 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/ButtonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_anim"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/tableRow_zhanwei"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true">
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="26dp">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="                  " />
+
+                    <ImageView
+                        android:id="@+id/IV_Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/time11" />
+
+                    <TextView
+                        android:id="@+id/tv_Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow_Wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="26dp">
+
+                    <TextView
+                        android:id="@+id/textView_sp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="               " />
+
+                    <ImageView
+                        android:id="@+id/IV_Wrong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:src="@drawable/wrongnum" />
+
+                    <TextView
+                        android:id="@+id/IV_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#ffff0000"
+                        android:textSize="18dp" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="26dp">
+
+                <Button
+                    android:id="@+id/Button_NewGame"
+                    android:layout_width="83dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:text="新游戏" />
+
+                <Button
+                    android:id="@+id/Button_About"
+                    android:layout_width="83dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:text="关于" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="26dp">
+
+                <Button
+                    android:id="@+id/Button_CallMe"
+                    android:layout_width="83dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:onClick="settingB"
+                    android:text="设置" />
+
+                <Button
+                    android:id="@+id/Button_Exit"
+                    android:layout_width="83dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:text="退出" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/IV_Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="63dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="26dp"
+                android:layoutAnimation="@anim/layout_card_anim">
+
+                <ImageView
+                    android:id="@+id/ImageView00"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="26dp"
+                android:layoutAnimation="@anim/layout_card_anim">
+
+                <ImageView
+                    android:id="@+id/ImageView04"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView05"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView06"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView07"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="26dp"
+                android:layoutAnimation="@anim/layout_card_anim">
+
+                <ImageView
+                    android:id="@+id/ImageView08"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView09"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView10"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+
+                <ImageView
+                    android:id="@+id/ImageView11"
+                    android:layout_width="65dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="1dp"
+                    android:onClick="CardTouch"
+                    android:src="@drawable/card" />
+            </TableRow>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

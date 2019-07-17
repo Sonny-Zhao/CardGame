@@ -10,15 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.tianyu.cardgame.R;
-import com.tianyu.cardgame.activity.MainActivity;
 import com.tianyu.cardgame.adapter.ViewPagerAdapter;
 
 
-import android.R.interpolator;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.DocumentsContract;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
@@ -27,7 +24,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Guide extends Activity implements OnPageChangeListener{
+public class GuideActivity extends Activity implements OnPageChangeListener{
 
 
     private ViewPager vp;
@@ -64,7 +61,7 @@ public class Guide extends Activity implements OnPageChangeListener{
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent intent=new Intent(Guide.this, MainActivity.class);
+                Intent intent=new Intent(GuideActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }

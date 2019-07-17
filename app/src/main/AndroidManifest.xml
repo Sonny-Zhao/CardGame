@@ -3,30 +3,31 @@
     package="com.tianyu.cardgame">
 
     <application
+        android:name=".application.CardGameApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name="com.tianyu.cardgame.activity.MainActivity"
-            android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
         <activity
             android:name="com.tianyu.cardgame.activity.AboutActivity"
-            android:label="@string/title_activity_about"
             android:theme="@android:style/Theme.Dialog"></activity>
 
         <activity
-            android:name="com.tianyu.cardgame.activity.Guide"
+            android:name="com.tianyu.cardgame.activity.GuideActivity"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-        <activity
-            android:name="com.tianyu.cardgame.activity.welcome"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
+        <activity
+            android:name="com.tianyu.cardgame.activity.StartUpActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
